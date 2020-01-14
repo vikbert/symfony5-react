@@ -26,3 +26,11 @@ services:
     volumes:
       - ./logs/nginx:/var/log/nginx:cached
       - ./symfony/:/var/www/symfony:cached
+  node:
+    image: node:13-alpine
+    working_dir: /var/www/react
+    volumes:
+      - ./react:/var/www/react
+      - ./react:/bindmount:rw
+    ports:
+      - "8080:8080"
