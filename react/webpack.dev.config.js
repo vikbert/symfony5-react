@@ -6,10 +6,11 @@ const webpack = require("webpack");
 
 module.exports = (env, argv) => {
   return {
+    stats: { children: false},
     mode: "development",
     entry: "./index.js",
     output: {
-      path: path.resolve(__dirname, "../public/frontend"),
+      path: path.resolve(__dirname, "../symfony/public/react"),
       filename: "main-[hash].js",
       publicPath: "/"
     },
