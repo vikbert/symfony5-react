@@ -40,3 +40,10 @@ DATABASE_URL=mysql://root:root@mysql:3306/symfony?serverVersion=5.7
 
 call localhost in your browser:
 - [http://localhost](http://localhost/)
+
+## TODOs:
+
+- make the dev server works for the default react project structure
+- add ` webpack.prod.config.js`
+- remove `mysql docker`
+

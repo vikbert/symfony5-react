@@ -14,7 +14,7 @@
     },
     "scripts": {
         "start": "node_modules/.bin/webpack-dev-server --config webpack.dev.config.js --inline --progress",
-        "build": "react-scripts build",
+        "build": "node_modules/.bin/webpack --config webpack.prod.config.js",
         "test": "react-scripts test"
     },
     "eslintConfig": {
