@@ -17,6 +17,6 @@ final class TodoController extends AbstractController
             ['id' => 3, 'title' => 'install safari', 'completed' => false],
         ];
 
-        return JsonResponse::create($tasks);
+        return JsonResponse::create('ok');
     }
 }

@@ -60,6 +60,9 @@ module.exports = (env, argv) => {
                 fileName: 'manifest.json',
                 publicPath: 'react/',
             }),
+            new webpack.DefinePlugin({
+                BASE_URI: JSON.stringify('/api'),
+            }),
         ],
     };
 };
