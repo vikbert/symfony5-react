@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace Vertriebsportal\Infrastructure\Subscriber;
+namespace App\Infrastructure;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpFoundation\Response;
